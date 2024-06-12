@@ -3,22 +3,24 @@
     "target": "es2017", // 指定目标 JavaScript 版本
     "module": "commonjs", // 指定模块系统
     "outDir": "./dist", // 指定输出目录，编译后的 JavaScript 文件存放的目录
-    "rootDir": "src", // 指定源文件目录
+    "rootDir": "./", // 指定源文件目录
     "sourceMap": true, // 生成源映射文件，以便调试
-    "strict": true, // 启用严格模式，提高代码质量
+    // "strict": true, // 启用严格模式，提高代码质量
     "esModuleInterop": true, // 允许与 ES 模块之间的互操作性
     "experimentalDecorators": true, // 允许使用实验性的装饰器特性
     "emitDecoratorMetadata": true, // 为装饰器生成元数据
-    "declaration": true, // 生成声明文件（.d.ts）
+    // "declaration": true, // 生成声明文件（.d.ts）
     "skipLibCheck": true, // 跳过对库的类型检查
     "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致
-    "declarationMap": false,
+    // "declarationMap": false,
     "removeComments": true,
     "jsx": "react",
-    "baseUrl": "./src"
+    "baseUrl": "./",
+    "resolveJsonModule": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "config/**/*"
   ], // 包含编译的源文件目录
   "exclude": [
     "node_modules",
